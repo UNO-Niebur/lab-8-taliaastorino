@@ -31,7 +31,7 @@ def main():
 
     # userID
     lastPart = last.lower()
-    if len(lastPart) < 5:
+    while len(lastPart) < 5:
       lastPart += "X"
 
     last3 = studentID[-3:]

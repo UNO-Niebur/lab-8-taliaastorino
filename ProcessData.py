@@ -18,10 +18,10 @@ def main():
 
     first = parts[0]
     last = parts[1]
-    major = parts[2]
-    year = parts[3]
+    year = parts[5]
+    major = parts[6]
 
-    userID = first[0].lower() = last.lower() + str(random.randint(10,99))
+    userID = first[0].lower() + last.lower() + str(random.randint(10,99))
 
     majorYear = major + "-" + year
 

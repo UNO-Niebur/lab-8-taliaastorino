@@ -14,7 +14,14 @@ def main():
   #Process each line of the input file and output to the CSV file
   for line in inFile:
     line = line.strip()
-    parts = line.split(",")
+
+    if line == "":
+      continue
+
+    parts = line.split()
+
+    if len(parts) < 7:
+      continue
 
     first = parts[0]
     last = parts[1]
